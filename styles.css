@@ -62,3 +62,41 @@ h4 {
   box-shadow: 0 0 20px white;
   background-color: grey;
 }
+/* 
+How to play */
+
+h1 {
+  font-family: cursive;
+  font-size: 3rem;
+  margin-bottom: 0;
+  color: #fef2bf;
+}
+h3 {
+  font-family: cursive;
+  font-size: 2rem;
+  text-align: left;
+  color: #f0d9ff;
+}
+
+.btnHowto {
+  margin-top: 5mm;
+  height: 50px;
+  width: 250px;
+  display: inline-block;
+  border: 5px solid black;
+  border-radius: 20%;
+  background-color: teal;
+}
+
+.btnHome {
+  height: 50px;
+  width: 150px;
+  display: inline-block;
+  border: 5px solid black;
+  border-radius: 15%;
+  background-color: teal;
+}
+
+.homebtn {
+  font-size: 7mm;
+}
