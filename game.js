@@ -16,14 +16,6 @@ for (var i = 0; i < numberOfButtons; i++) {
   });
 }
 
-$(document).keypress(function () {
-  if (!started) {
-    $("#level-title").text("Level " + level);
-    nextSequence();
-    started = true;
-  }
-});
-
 $(".btnStart").click(function () {
   if (!started) {
     $("#level-title").text("Level " + level);
@@ -75,13 +67,13 @@ function checkAnswer(currentLevel) {
     }
   } else {
     console.log("Wrong");
-    var audio = new Audio(" wrong.mp3");
+    var audio = new Audio("wrong.mp3");
     audio.play();
     $("body").addClass("game-over");
     setTimeout(function () {
       $("body").removeClass("game-over");
     }, 200);
-    $("#level-title").text("Game Over, Press/Click to Restart");
+    $("#level-title").text("Game Over,Restart again");
     startOver();
   }
 }
